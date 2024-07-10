@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Parceiros from '/public/img/assets/partners.svg'
 import ServicosInclusos from '/public/img/assets/include_services.svg'
-import Checklist from '/public/img/assets/checklist.svg'
 import Button from '../Button/Button'
+import { Checklist } from '../Checklist/Checklist'
 
 const ClientSection = () => {
     return (
@@ -36,7 +36,7 @@ const ClientSection = () => {
                         alt='Serviços incluídos'>
                     </Image>
                 </div>
-                <div className='flex flex-col gap-3 md:gap-4 max-w-md items-start'>
+                <div className='flex flex-col gap-7 max-w-md items-center'>
                     <div>
                         <h1 className='justify-center text-center font-montserrat font-medium text-3xl md:text-4xl'>
                             <span className='text-basic_purple'>+</span> SERVIÇOS
@@ -48,11 +48,28 @@ const ClientSection = () => {
                             Veja o que você terá no acompanhamento do seu projeto
                         </p>
                     </div>
-                    <div className='flex items-start'>
-                        <Image
-                            src={Checklist}
-                            alt='Checklist'>
-                        </Image>
+                    <div className='flex flex-col items-center gap-8'>
+                        <div className='leading-relaxed text-left justify-center font-montserrat font-medium'>
+                            <Checklist
+                                title='Atendimento Personalizado'>
+                            </Checklist>
+                            <Checklist
+                                title='Serviço de marketing e vendas'>
+                            </Checklist>
+                            <Checklist
+                                title='Desenvolvimento ágil'>
+                            </Checklist>
+                            <Checklist
+                                title='Suporte gratuito'>
+                            </Checklist>
+                            <Checklist
+                                title='Preços acessíveis'>
+                            </Checklist>
+                            <Checklist
+                                title='Soluções inovadoras'>
+                            </Checklist>
+                        </div>
+                        <Button name='Quero impulsionar meu negócio' link='#' />
                     </div>
                 </div>
             </div>

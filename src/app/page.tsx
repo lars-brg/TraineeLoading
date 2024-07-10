@@ -5,6 +5,7 @@ import ServicesSection from "./components/ServicesSection/ServicesSection";
 import CountingSection from "./components/CountingSection/CountingSection";
 import AttendingSection from "./components/AttendingSection/AttendingSection";
 import ClientSection from "./components/ClientsSection/ClientSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 export default function Home() {
   
@@ -16,6 +17,7 @@ export default function Home() {
       <CountingSection/>
       <AttendingSection/>
       <ClientSection/>
+      <ContactSection/>
     </div>
   );
 }
