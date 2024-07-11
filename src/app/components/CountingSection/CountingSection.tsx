@@ -26,7 +26,7 @@ const CountingSection = () => {
                 <div className='flex flex-col gap-2 hover:scale-110 transition duration-300'>
                     <h1 className='text-white text-center font-montserrat font-bold text-2xl md:text-3xl'>+ de 99 cafés</h1>
                     <p className='text-white text-center font-montserrat font-medium text-sm max-w-96'>
-                        cafés tomados durante o <strong>desenvolvimento da solução do seu negócio</strong></p>
+                        tomados durante o <strong>desenvolvimento da solução do seu negócio</strong></p>
                 </div>
             </div>
         </div>
