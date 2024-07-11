@@ -23,7 +23,6 @@ const Navbar: React.FC = () => {
                             alt="Loading"
                             width={105} height={40}
                         />
-
                     </Link>
                     <Link href="/">
                         <Image
@@ -31,15 +30,14 @@ const Navbar: React.FC = () => {
                             alt="Desenvolvimento de sites e soluções digitais"
                             width={240} height={45}
                         />
-
                     </Link>
                 </div>
                 {/* Itens da navbar */}
                 <div className="hidden md:flex flex-1 justify-around gap-10">
                     <div className="flex gap-12">
-                        <Link href="#about" className="text-primary_white">Sobre a Loading</Link>
-                        <Link href="#contact" className="text-primary_white">Contato</Link>
-                        <Link href="#freecontent" className="text-primary_white">Conteúdo Gratuito</Link>
+                        <Link href="#about" className="text-primary_white border-purple-500 hover:border-b">Sobre a Loading</Link>
+                        <Link href="#contact" className="text-primary_white border-purple-500 hover:border-b">Contato</Link>
+                        <Link href="#freecontent" className="text-primary_white border-purple-500 hover:border-b">Conteúdo Gratuito</Link>
                     </div>
                     <div className="flex gap-6">
                         <Link href="#linkedin" className="text-primary_white">
@@ -78,9 +76,15 @@ const Navbar: React.FC = () => {
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className="text-white focus:outline-none"
                     >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
+                        {isMobileMenuOpen ? (
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        ) : (
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        )}
                     </button>
                 </div>
             </div>

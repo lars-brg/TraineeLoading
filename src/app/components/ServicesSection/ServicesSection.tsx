@@ -3,6 +3,7 @@ import Image from 'next/image'
 import SiteAplicativo from '/public/img/servicesSection/sites_aplicativos.svg'
 import Marketing from '/public/img/servicesSection/marketing.svg'
 import Button from '../Button/Button'
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
 
 const ServicesSection = () => {
     return (
@@ -15,7 +16,7 @@ const ServicesSection = () => {
                 <h1 className='text-center text-4xl text-basic_purple font-montserrat font-bold'>SERVIÇOS</h1>
                 <p className='text-center text-sm md:text-base font-montserrat max-w-xl py-4 font-medium'>Tenha a disposição o melhor que a empresa jr da nova economia tem a oferecer ao seu negócio. </p>
             </div>
-
+             
             <div className='flex flex-col md:flex-row px-8 md:px-24 gap-16 md:gap-28'>
                 <div className='flex flex-col gap-4 max-w-md items-start justify-center'>
                     <h1 className='text-left text-basic_purple font-montserrat font-extrabold text-3xl md:text-6xl'>SITES E APLICATIVOS</h1>
@@ -33,7 +34,8 @@ const ServicesSection = () => {
                     </Image>
                 </div>
             </div>
-
+             
+             
             <div className='flex flex-col-reverse md:flex-row px-8 md:px-24 gap-16 md:gap-28'>
                 <div>
                     <Image
@@ -51,6 +53,7 @@ const ServicesSection = () => {
                     <Button name='SAIBA MAIS' link='#' />
                 </div>
             </div>
+             
         </div>
     )
 }
