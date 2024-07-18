@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const ContactSection = () => {
   return (
-    <div className='flex flex-col md:flex-row w-full bg-basic_purple py-10 gap-16 px-8 md:px-24'>
+    <div className='flex flex-col md:flex-row w-full bg-basic_purple py-10 gap-16 px-8 md:px-24 justify-center'>
       <div className='text-white font-montserrat text-sm flex flex-col gap-3 w-72 md:w-80'>
         <Image
           src={logoLoadingJrpequena}
