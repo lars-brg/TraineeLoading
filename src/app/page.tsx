@@ -6,17 +6,24 @@ import CountingSection from "./components/CountingSection/CountingSection";
 import AttendingSection from "./components/AttendingSection/AttendingSection";
 import ClientSection from "./components/ClientsSection/ClientSection";
 import ContactSection from "./components/ContactSection/ContactSection";
-import ScrollAnimation from "./components/ScrollAnimation/ScrollAnimation"; // Adicione o caminho correto para o ScrollAnimation
+import ScrollAnimation from "./components/ScrollAnimation/ScrollAnimation";
+import Section from "./components/Section/Section";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <PresentationSection />
-      <ServicesSection />
+      <Section>
+        <ServicesSection />
+      </Section>
       <CountingSection />
-      <AttendingSection />
-      <ClientSection />
+      <Section>
+        <AttendingSection />
+      </Section>
+      <Section>
+        <ClientSection />
+      </Section>
       <ContactSection />
     </div>
   );

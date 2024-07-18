@@ -8,6 +8,10 @@ import instagramIcon from "/public/img/navbar/mediaIcons/instagram.svg";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { CgMail } from "react-icons/cg";
+import { CiLinkedin } from "react-icons/ci";
+import { AiOutlineFacebook } from "react-icons/ai";
+import { FaInstagram } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,32 +45,16 @@ const Navbar: React.FC = () => {
                     </div>
                     <div className="flex gap-6">
                         <Link href="#linkedin" className="text-primary_white">
-                            <Image
-                                src={linkedinIcon}
-                                alt="linkedin"
-                                width={20} height={20}
-                            />
+                            <CiLinkedin className="text-2xl"/>
                         </Link>
                         <Link href="#facebook" className="text-primary_white">
-                            <Image
-                                src={facebookIcon}
-                                alt="facebook"
-                                width={20} height={20}
-                            />
+                            <AiOutlineFacebook className="text-2xl"/>
                         </Link>
                         <Link href="#instagram" className="text-primary_white">
-                            <Image
-                                src={instagramIcon}
-                                alt="instagram"
-                                width={20} height={20}
-                            />
+                            <FaInstagram className="text-2xl"/>
                         </Link>
                         <Link href="#gmail" className="text-primary_white">
-                            <Image
-                                src={gmailIcon}
-                                alt="gmail"
-                                width={24} height={20}
-                            />
+                            <CgMail className="text-2xl"/>
                         </Link>
                     </div>
                 </div>
