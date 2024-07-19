@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
                     <div className="flex gap-12">
                         <Link href="#about" className="text-primary_white border-purple-500 hover:border-b">Sobre a Loading</Link>
                         <Link href="#contact" className="text-primary_white border-purple-500 hover:border-b">Contato</Link>
-                        <Link href="#freecontent" className="text-primary_white border-purple-500 hover:border-b">Conteúdo Gratuito</Link>
+                        <Link href="/portfolio" className="text-primary_white border-purple-500 hover:border-b">Conteúdo Gratuito</Link>
                     </div>
                     <div className="flex gap-6">
                         <Link href="#linkedin" className="text-primary_white">
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
                 <div className="md:hidden mt-2 flex flex-col items-start bg-dark_purple w-full px-4 py-2">
                     <Link href="#about" className="block w-full py-2 text-primary_white">Sobre a Loading</Link>
                     <Link href="#contact" className="block w-full py-2 text-primary_white">Contato</Link>
-                    <Link href="#freecontent" className="block w-full py-2 text-primary_white">Conteúdo Gratuito</Link>
+                    <Link href="/portfolio" className="block w-full py-2 text-primary_white">Conteúdo Gratuito</Link>
                 </div>
             )}
         </nav>

@@ -9,8 +9,8 @@ import Link from 'next/link';
 
 const ContactSection = () => {
   return (
-    <div className='flex flex-col md:flex-row w-full bg-basic_purple py-10 gap-16 px-8 md:px-24 justify-center'>
-      <div className='text-white font-montserrat text-sm flex flex-col gap-3 w-72 md:w-80'>
+    <div id='contact' className='flex flex-col md:flex-row w-full bg-basic_purple py-10 gap-16 px-8 md:px-24 justify-center'>
+      <div className='text-white text-sm flex flex-col gap-3 w-72 md:w-80'>
         <Image
           src={logoLoadingJrpequena}
           alt="linkedin"
@@ -55,7 +55,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className='text-white font-montserrat text-sm flex flex-col gap-8 w-72 md:w-80'>
+      <div className='text-white text-sm flex flex-col gap-8 w-72 md:w-80'>
         <p className='font-semibold'>
           Loading Desenvolvimento Jr |
           Próposito é um exercício diário
@@ -65,7 +65,7 @@ const ContactSection = () => {
         </p>
       </div>
 
-      <div className='text-white font-montserrat text-sm flex flex-col gap-6 w-72 md:w-80 '>
+      <div className='text-white text-sm flex flex-col gap-6 w-72 md:w-80 '>
         <p className='font-semibold'>
           Chegou a hora!
           Não deixe sua empresa parada no tempo
