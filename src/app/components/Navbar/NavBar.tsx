@@ -1,10 +1,6 @@
 "use client";
 import logoLoadingJr from "/public/img/navbar/logo-LoadingJr.svg";
 import logoComplemento from "/public/img/navbar/logo-complemento.svg";
-import facebookIcon from "/public/img/navbar/mediaIcons/facebook.svg";
-import linkedinIcon from "/public/img/navbar/mediaIcons/linkedin.svg";
-import gmailIcon from "/public/img/navbar/mediaIcons/gmail.svg";
-import instagramIcon from "/public/img/navbar/mediaIcons/instagram.svg";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -39,7 +35,7 @@ const Navbar: React.FC = () => {
                 {/* Itens da navbar */}
                 <div className="hidden md:flex flex-1 justify-around gap-10">
                     <div className="flex gap-12">
-                        <Link href="#about" className="text-primary_white border-purple-500 hover:border-b">Sobre a Loading</Link>
+                        <Link href="/aboutUs" className="text-primary_white border-purple-500 hover:border-b">Sobre a Loading</Link>
                         <Link href="#contact" className="text-primary_white border-purple-500 hover:border-b">Contato</Link>
                         <Link href="/portfolio" className="text-primary_white border-purple-500 hover:border-b">Conteúdo Gratuito</Link>
                     </div>
@@ -79,7 +75,7 @@ const Navbar: React.FC = () => {
             {/* Menu móvel */}
             {isMobileMenuOpen && (
                 <div className="md:hidden mt-2 flex flex-col items-start bg-dark_purple w-full px-4 py-2">
-                    <Link href="#about" className="block w-full py-2 text-primary_white">Sobre a Loading</Link>
+                    <Link href="#aboutUs" className="block w-full py-2 text-primary_white">Sobre a Loading</Link>
                     <Link href="#contact" className="block w-full py-2 text-primary_white">Contato</Link>
                     <Link href="/portfolio" className="block w-full py-2 text-primary_white">Conteúdo Gratuito</Link>
                 </div>
