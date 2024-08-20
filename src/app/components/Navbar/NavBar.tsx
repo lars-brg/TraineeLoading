@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
             {/* Menu móvel */}
             {isMobileMenuOpen && (
                 <div className="md:hidden mt-2 flex flex-col items-start bg-dark_purple w-full px-4 py-2">
-                    <Link href="#aboutUs" className="block w-full py-2 text-primary_white">Sobre a Loading</Link>
+                    <Link href="/aboutUs" className="block w-full py-2 text-primary_white">Sobre a Loading</Link>
                     <Link href="#contact" className="block w-full py-2 text-primary_white">Contato</Link>
                     <Link href="/portfolio" className="block w-full py-2 text-primary_white">Conteúdo Gratuito</Link>
                 </div>

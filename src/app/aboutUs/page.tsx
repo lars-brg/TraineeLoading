@@ -19,21 +19,13 @@ export default function Home() {
     return (
         <div>
             <Navbar />
-            <Section>
-                <PresentationAboutUs />
-            </Section>
-                <LoadingTeam />
-            <Section>
-                <CarouselMembers />
-            </Section>
-                <MissionLoading />
-            <Section>
-                <ValuesAndVision />
-            </Section>
-                <LoadingOnline />
-            <Section>
-                <TutorTeacher />
-            </Section>
+            <PresentationAboutUs />
+            <LoadingTeam />
+            <CarouselMembers />
+            <MissionLoading />
+            <ValuesAndVision />
+            <LoadingOnline />
+            <TutorTeacher />
             <ContactSection />
         </div>
     );

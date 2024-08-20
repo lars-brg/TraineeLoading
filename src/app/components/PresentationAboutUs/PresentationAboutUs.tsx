@@ -5,11 +5,11 @@ import ImagemSobreNos from '/public/img/ilustração_aboutUS.svg';
 const PresentationAboutUs = () => {
     return (
         <div className="flex flex-row w-full h-auto bg-basic_purple relative">
-            <div className="flex text-left lg:block absolute z-20 top-8 md:top-28 mx-8 md:ml-14 w-auto md:w-2/5 text-primary_white">
-                <p className="text-3xl md:text-5xl">
+            <div className="flex flex-col text-left lg:block absolute z-20 top-8 md:top-28 mx-8 md:ml-14 w-auto md:w-2/5 text-primary_white gap-3">
+                <p className="text-2xl md:text-5xl">
                     Conheça nosso time e a visão que<span className="font-bold"> compartilhamos</span>
                 </p>
-                <h1 className="text-4xl md:text-6xl font-bold">
+                <h1 className="text-3xl md:text-6xl font-bold">
                     #VemSerLoading
                 </h1>
             </div>

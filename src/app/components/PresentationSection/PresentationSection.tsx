@@ -7,7 +7,7 @@ import TypingEffect from './TypingEffect';
 const PresentationSection: React.FC = () => {
     return (
         <div className="flex flex-row w-full h-auto bg-basic_purple relative">
-            <div className="flex-col text-left lg:block absolute z-20 top-8 md:top-1/3 mx-8 md:ml-14 w-auto md:w-2/5 text-primary_white font-montserrat">
+            <div className="flex-col text-left lg:block absolute z-20 top-8 md:top-1/3 mx-8 md:ml-14 w-auto md:w-2/5 text-primary_white">
                 <p className="text-base md:text-xl">Transformando ideias em realidade digital</p>
                 <h1 className="text-4xl md:text-6xl">
                     Construindo um futuro de

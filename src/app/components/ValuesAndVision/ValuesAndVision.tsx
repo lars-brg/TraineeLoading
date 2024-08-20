@@ -6,11 +6,11 @@ import { Checklist } from '../Checklist/Checklist'
 
 const ValuesAndVision = () => {
     return (
-        <div>
-            <div className='flex flex-col md:flex-row px-8 md:px-24 gap-16 md:gap-28'>
+        <div className='flex flex-col gap-14'>
+            <div className='flex flex-col md:flex-row px-8 md:px-24 gap-4 md:gap-28'>
                 <div className='flex flex-col gap-4 max-w-md items-start justify-center'>
                     <h1 className='text-left text-basic_purple font-montserrat font-extrabold text-3xl md:text-6xl'>Visão</h1>
-                    <p className='leading-relaxed font-montserrat font-medium'>
+                    <p className='leading-relaxed font-montserrat font-medium text-lg md:text-xl'>
                         Ser uma empresa de referência em desenvolvimento de soluções digitais
                         na cidade de Sobral-CE e dentro do Campus da UFC de Sobral.
                     </p>
@@ -24,7 +24,7 @@ const ValuesAndVision = () => {
             </div>
 
 
-            <div className='flex flex-col-reverse md:flex-row px-8 md:px-24 gap-16 md:gap-28'>
+            <div className='flex flex-col-reverse md:flex-row px-8 md:px-24 gap-4 md:gap-28'>
                 <div>
                     <Image
                         src={Leadership}
